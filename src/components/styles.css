@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Ultra|Inconsolata');
+
+body {
+    margin: 0;
+}
+img {
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+}
+span#name {
+   font-family: 'Inconsolata', monospace; 
+   font-size: 1em;
+   color: #DA2C5A;
+   font-weight: bolder;
+}
+img.mainImage{
+    width: 100%;
+    height: 100%; 
+    padding: 0;
+}
+.mainWrapper {
+    display: flex;
+    box-sizing: border-box;
+    border: 15px solid #1C5D9C;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+.homeImageContainer {
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+}
+.image {
+    width: 100%;
+    height: 100%;
+}
+.button {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    z-index: 10;
+    overflow: hidden;
+    transition: background-color;
+    transition-delay: 0s;
+    border: 4px solid #DA2C5A;
+    bottom: 25%;
+    left: 13%;
+    width: 72%;
+    background: rgb(255,255,255);
+}
+.button:hover{
+    background: #DA2C5A;
+    color: rgb(255,255,255);
+}
+.buttonTitle {
+    color: #DA2C5A;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    height: 100%;
+}
+.buttonTitle:hover {
+    color: rgb(255,255,255);
+}
+.homeHeader {
+    color: #DA2C5A;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 5em;
+    text-align: center;
+}
+.homeContentContainer {
+    overflow: hidden;
+    width: 50%;
+    height: 93%;
+    padding: 15px 0;
+}
+.miniBioContainer {
+    letter-spacing: 5px;
+    font-size: 1em;
+    width: 76%;
+    position: relative;
+    left: 13%;
+    line-height: 1.85;
+}
+.multi-color {
+    font-family: 'Major Mono Display';
+    font-weight: bolder;
+    font-size: 1.25em;
+}
+span:nth-child(1) {
+    color: #FBBC05;
+}
+span:nth-child(3) {
+    color: #EA4335;
+}
+span:nth-child(4) {
+    color: #34A853;
+}
+#bio {
+    position: fixed;
+    top: 38%;
+    font-size: 12em;
+    z-index: -100;
+    right: 29.5%;
+    color: rgb(52, 168, 83, 0.2);
+    transform: rotate(90deg);
+}
+.experience-main{
+    overflow: hidden;
+    width: 85%;
+    height: 100%;
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+}
+.experience-addition{
+    display: flex;
+    overflow: scroll;
+    width: 15%;
+    height: 100%;
+    /* align-items: center; */
+    justify-content: center;
+    box-shadow: -5px 0 3px grey;
+}
+.counters {
+    text-align: left;
+    padding: 1em 2em;
+    /* margin-top: 2em; */
+    counter-reset: counter-name;
+
+}
+.list-title {
+    font-family: 'Inconsolata', monospace;
+}
+.item{
+    position: relative;
+    font-family: 'Inconsolata', monospace;
+}
+.item::before {
+    counter-increment: counter-name;
+    content: counter(counter-name) '. ';
+    position: absolute;
+    left: -2em;
+}
+.pro {
+    width: 50%;
+    position: relative;
+    float: left;
+    text-align: center;
+    font-size: 2em;
+    height: 100%;
+}
+.portfolio {
+    width: 49.5%;
+    position: relative;
+    float: left;
+    text-align: center;
+    font-size: 2em;
+}
+.resume-cont {
+    height: 100%;
+}
+.screenShot {
+    height: 150px;
+    width: 250px;
+    margin-top: 15px;
+}
+.screenCont {
+    position: relative;
+    left: 23%;
+}
+.portHeader {
+    font-family: 'Major Mono Display';
+    color: #DA2C5A;
+}
